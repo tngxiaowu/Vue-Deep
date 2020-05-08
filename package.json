@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/tngxiaowu/Vue-Deep/issues"
   },
-  "homepage": "https://github.com/tngxiaowu/Vue-Deep#readme"
+  "homepage": "https://github.com/tngxiaowu/Vue-Deep#readme",
+  "dependencies": {
+    "lerna": "^3.20.2"
+  }
 }
