@@ -1,5 +1,6 @@
+// 引入execa模块
 const execa = require('execa');
-const { target } = require('./utils');
 
-// 执行rollUp
-execa('rollup',[ '-wc','--environment',`TARGET:${target},FORMATS:umd`],{ stdio:'inherit'});
+// file(文件) arguments（参数） options（配置项）
+// 执行excua模块
+execa('rollup',[ '-wc','--environment',`FORMATS:umd`],{ stdio:'inherit'});
