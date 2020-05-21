@@ -1,7 +1,3 @@
-import { complier } from './runtime-core/index.js';
+import { createApp } from './runtime-dom/src/index.js';
 
-complier();
-
-export function Vue() {
-    console.log(`the answer is ${a}`);
-}
+const app = createApp();

@@ -1,10 +1,24 @@
-var complier = function complier() {
-  console.log('hello, I am Complier Fn');
-};
+(function () {
+    'use strict';
 
-complier();
-function Vue() {
-  console.log("the answer is ".concat(a));
-}
+    var baseCreateApp = function baseCreateApp() {
+      console.log("I am base CreateApp");
+    };
 
-export { Vue };
+    var createRenderer = function createRenderer() {
+      return {
+        baseCreateApp: baseCreateApp
+      };
+    };
+
+    var _createRenderer = createRenderer(),
+        baseCreateApp$1 = _createRenderer.baseCreateApp;
+
+    var createApp = function createApp() {
+      var app = baseCreateApp$1.apply(void 0, arguments);
+      return app;
+    };
+
+    var app = createApp();
+
+}());

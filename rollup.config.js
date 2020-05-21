@@ -4,8 +4,8 @@ const options = {
     input:'packages/index.js',
     output:{
         file: 'main.js',
-        format:'es',
-        name:'dist'
+        format:'iife',
+        name:'Global'
     },
     plugins:[
         babel()
