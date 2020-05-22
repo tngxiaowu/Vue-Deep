@@ -1,4 +1,4 @@
-(function () {
+var Global = (function (exports) {
     'use strict';
 
     var baseCreateApp = function baseCreateApp() {
@@ -19,6 +19,7 @@
       return app;
     };
 
-    var app = createApp();
+    exports.createApp = createApp;
 
-}());
+    return exports;
+}({}));
