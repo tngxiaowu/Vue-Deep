@@ -4,10 +4,10 @@
   "description": "用来学习Vue3的新特性",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node lesson.js",
     "build": "node scripts/build",
     "dev-webpack": "webpack ./build/webpack.common.js",
-    "dev-koa":"node scripts/dev-koa.js"
+    "dev-koa": "node scripts/dev-koa.js"
   },
   "repository": {
     "type": "git",
