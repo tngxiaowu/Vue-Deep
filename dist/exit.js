@@ -88,16 +88,16 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(__dirname) {
-  const path = __webpack_require__(1)
+/* WEBPACK VAR INJECTION */(function(__dirname) {const path = __webpack_require__(1);
 
-  module.exports = {
-    mode: 'none',
-    entry: 'bundle.js',
-    output: {
-      path: path.resolve(__dirname, 'dist')
+module.exports = {
+    mode:'none',
+    entry:'./index.js',
+    output:{
+        filename:'exit.js',
+        path: path.resolve(__dirname,'dist')
     }
-  }
+}
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),

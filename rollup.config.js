@@ -6,7 +6,7 @@ const options = {
     output:{
         file: './dist/vue.js',
         format:'iife',
-        name:'Global'
+        name:'Vue'
     },
     plugins:[
         babel()

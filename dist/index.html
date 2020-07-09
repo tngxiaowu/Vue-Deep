@@ -6,14 +6,20 @@
     <title>Hello Vue.JS</title>
 </head>
 <body>
-    <div>
-        This is a Vue Demo!
+    <div id='app'>
+        {{  text }}
     </div>
     <script src='/vue.js'></script>
+    <script src="./bundle.js"> </script>
     <script>
-        const { createApp } = Global;
-        let app = createApp();
-        console.log(app,'what is app');
+        const { createApp, reactive} = Vue;
+        const state = reactive({ text: 'hello world!' })
+        const App = {
+            setup () {
+                return { state }
+            }
+        }
+        createApp().mount(App, '#app')
     </script>
 </body>
 </html>
